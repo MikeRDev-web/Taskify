@@ -1,0 +1,68 @@
+<!--Estructura del modal de nueva tarea-->
+
+<div class="modalNuevaTarea" id="nuevaTareaModal">
+    <a href="#" id="cerrarModalNuevaTarea"><img src="/IMG/svg/close.svg" alt="close" class="modalNuevaTarea__btn-close--img"></a>
+    <h2 class="modalNuevaTarea__titulo">Tarea:</h2>
+    <input type="text" class="modalNuevaTarea__input">
+    <p></p>
+    <h2 class="modalNuevaTarea__titulo">Descripción:</h2>
+    <textarea class="modalNuevaTarea__textarea"></textarea>
+    <a href="#" class="modalNuevaTarea__btn">Guardar tarea</a>
+</div>
+
+<!--Estructiura de la seccion de descripcion-->
+
+<div class="seccionDescripcion" id="descripcion">
+    <h1 class="seccionDescripcion__titulo">¿Que es Taskify?</h1>
+    <p class="seccionDescripcion__parrafo">
+        Taskify es una aplicación de lista de tareas que te ayuda a ser más productivo.
+        Con su función de conectividad con Chat GPT, obtendrás sugerencias inteligentes y consejos personalizados para tus tareas. 
+        <br>
+        Organiza, completa y alcanza tus metas de manera eficiente con Taskify. 🚀📅
+      </p>
+</div>
+
+<!--Estructuctura del elemto li en la lista de tareas-->
+
+<li class="seccionTareas__lista--li">
+    <h2 class="seccionTareas__lista--h2">Nombre de la tarea</h2>
+    <span class="seccionTareas__lista--iconSection">
+        <a href="#" title="Iniciar tarea"><img src="/IMG/svg/play.svg" alt="iniciar tarea" class="seccionTareas__lista--ul-icon"></a>
+        <a href="#" title="Descripción de la tarea"><img src="/IMG/svg/info.svg" alt="Informacion de la tarea" class="seccionTareas__lista--ul-icon"></a>
+        <a href="#" title="Usar chatGPT"><img src="/IMG/svg/ChatGPT.svg" alt="Usar IA" class="seccionTareas__lista--ul-icon-chatgtpt"></a>
+    </span>
+</li>
+
+<!--Estructura login-->
+
+<div class="seccionLogin">
+    <h2 class="seccionLogin__titulo">¡Bienvenido!</h2>
+    <p class="seccionLogin__p">Correo electronico:</p>
+    <input type="email" class="seccionLogin__input">
+    <p class="seccionLogin__p">Contraseña:</p>
+    <span class="seccionContrasena">
+        <input type="password" class="seccionLogin__input--pasword" id="inputPasword">
+        <a href="#" id="showPassword"><img src="/IMG/svg/eyeClose.svg" alt="Mostrar contraseña" class="seccionLogin__eye" id="passwordImg"></a> 
+    </span>
+        <a href="#" class="seccionLogin__btn">Iniciar sesion</a>
+    <a href="#" class="seccionLogin__lostPassword">¿Olvidaste tu contraseña?</a>
+</div>
+
+<!--Modal de la descripcion de la tarea-->
+
+<section class="seccionModalDescripcion">
+    <a href="#"><img src="/IMG/svg/close.svg" alt="close" class="seccionModalDecripcion--img"></a>
+    <p class="seccionModalDescripcion--texto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis harum reiciendis velit maiores quia? Dignissimos, commodi. Quibusdam nulla laudantium sint, architecto necessitatibus impedit ullam vero veniam incidunt inventore aliquid amet?
+    </p>
+</section>
+
+<!--Modal de alerta para borrar-->
+<div class="modal-container">
+    <span class="modal__alerta__borrar">
+      <h1>¿Deseas eliminar esta tarea de la lista de tareas asignadas?</h1>
+      <h2>Recuerda que las tareas eliminadas no pueden recuperarse</h2>
+      <a href="#" class="modal__alerta__borrar__btn">Si, quiero eliminarla</a>
+      <a href="#" class="modal__alerta__borrar__btn">No, quiero conservarla</a>
+    </span>
+  </div>

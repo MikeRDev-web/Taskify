@@ -1,0 +1,42 @@
+.seccionModalDescripcion {
+    position: relative;
+    border: 1px solid var(--color5);
+    margin: auto;
+    margin-top: 4rem;
+    width: 40%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px var(--color5);
+    border-radius: 2rem;
+}
+
+.seccionModalDecripcion--img {
+    width: 3rem;
+    float: right;
+    margin: 1rem;
+    background-color: rgba(255, 0, 0, 0.411);
+    border-radius: 50%;
+}
+
+.seccionModalDecripcion--img:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    background-color: rgb(255, 0, 0); ;
+}
+
+.seccionModalDecripcion--img:not(hover) {
+    transition: .2s;
+}
+
+.seccionModalDescripcion--texto {
+    text-align: center;
+    display: flex;
+    margin: 17% auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 90%;
+}
+
+.prueba {
+    background-color: #ffff0088;
+}

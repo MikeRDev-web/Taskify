@@ -1,0 +1,118 @@
+.seccionTareas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: 20rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.seccionTareas__lista--titulo {
+    font-weight: 500;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color4);
+    width: 95%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.center {
+    border-right: 1px solid var(--color5);
+    border-left: 1px solid var(--color5);
+}
+
+.seccionTareas__lista--ul {
+    margin: 1rem auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.seccionTareas__lista--iconSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 30rem;
+}
+
+.seccionTareas__lista--iconSection-completada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30rem;
+    grid-column-start: auto;
+}
+
+.seccionTareas__lista--li {
+    margin: 1rem;
+    height: 40px;
+    opacity: 0;
+    animation: entrada 1s ease-in-out forwards;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.seccionTareas__lista--ul-icon {
+    width: 40px;
+    margin: 0 auto;
+    border-radius: 30%;
+    padding: 1px;
+}
+
+.seccionTareas__lista--ul-icon-chatgtpt {
+    width: 34px;
+    margin: 0 auto;
+    border-radius: 30%;
+    padding: 5px;
+    content: attr(title);
+}
+
+.seccionTareas__lista--h2 {
+    float: left;
+    font-weight: 550;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: auto 1rem;
+}
+
+.seccionTareas__lista--ul-icon:hover, .seccionTareas__lista--ul-icon-chatgtpt:hover {
+    box-shadow: 1px 1px 1px 1px var(--color5);
+    border: 1px solid var(--color4);
+    border-radius: 30%;
+    transform: translateY(-0.5rem);
+    transition: .1s;
+    content: attr(title);
+}
+
+.seccionTareas__lista--ul-icon:not(hover), .seccionTareas__lista--ul-icon-chatgtpt:not(hover){
+    transition: .2s;
+}
+
+.seccionTareas__lista--ul-icon:active, .seccionTareas__lista--ul-icon-chatgtpt:active {
+    transform: translateY(0.1rem);
+}
+
+.seccionTareas__lista:last-child {
+    border-left: 1px solid var(--color5);
+}
+
+

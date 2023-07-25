@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style-header.css">
+    <link rel="stylesheet" href="/CSS/style-general.css">
+    <link rel="stylesheet" href="/CSS/style-nuevaTarea.css">
+    <link rel="stylesheet" href="/CSS/style-nuevaTareaModal.css">
+    <link rel="stylesheet" href="/CSS/style-seccionTareas.css">
+    <link rel="stylesheet" href="/CSS/style-descripcion.css">
+    <link rel="stylesheet" href="/CSS/style-modalDescripcion.css">
+    <link rel="stylesheet" href="/CSS/style-modalAlerta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/IMG/logo.jpeg">
+    <title>Taskify</title>
+</head>
+
+<body id="body">
+    <div class="" id="modalDeAlerta"></div>
+    <header class="header" id="header">
+        <img src="/IMG/logo.jpeg" alt="Taskify" class="header__img">
+        <nav class="header__nav">
+            <ul class="header__nav-ul">
+                <li class="header__nav-li"><a href="#" class="header__nav-btn" id="nuevaTareaBtnMenu">Nueva tarea</a></li>
+                <li class="header__nav-li"><a href="#" class="header__nav-btn" id="queEsTaskifyBtnMenu">¿Que es Taskify?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="nuevaTarea" id="seccionGeneral">
+            <a href="#" class="nuevaTarea__btn" id="nuevaTareaBtn" onclick="abrirModalNuevaTarea()">Nueva tarea</a>
+        </section>
+
+        
+        <section class="seccionTareas" id="seccionTareas">
+            <div class="seccionTareas__lista ">
+                <h1 class="seccionTareas__lista--titulo">Tareas asignadas</h1>
+                <ul class="seccionTareas__lista--ul" id="tareaAsignada">
+                </ul>
+            </div>
+            <div class="seccionTareas__lista">
+                <h1 class="seccionTareas__lista--titulo">Tareas completadas</h1>
+                <ul class="seccionTareas__lista--ul" id="tareaCompletada">
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>

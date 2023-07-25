@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Agdasima', sans-serif;
+}
+
+:root {
+    --color1: #F2F2F2;
+    --color2: #D9D9D9;
+    --color3: #8C8C8C;
+    --color4: #262626;
+    --color5: #0D0D0D;
+    --fondo: #E9E9E9;
+}
+
+body {
+   background-color: var(--fondo);
+   height: 900px;
+   position: relative;
+   z-index: 0;
+}
